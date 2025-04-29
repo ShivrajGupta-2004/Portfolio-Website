@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d71c1e8eee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- -------------Header----------- -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hey, My name is <span>Shivraj Gupta</span> <br>and i am a Passionate <br> <span id="element"></span>
+                    <h1>
+            </div>
+            <div class="header-img">
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------About Section---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/header.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Shivraj Gupta, a Computer Science student with strong skills in Python, Java, MySQL, and web
+                        development using HTML, CSS, and JavaScript. I’ve built projects like an Event Management
+                        Platform and a Banking Account System, and I actively solve DSA problems on LeetCode. I enjoy
+                        learning new technologies, participating in coding competitions, and exploring fitness and
+                        travel in my free time.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Dev</span><br>Creating Websites using HTML, CSS & JavaScript</li>
+                            <li><span>Python Programming</span><br>Developing Logic & Scripts with Python</li>
+                            <li><span>DSA</span><br>Solving Coding Problems on LeetCode</li>
+                            <li><span>Java</span><br>Know Java Language & Database Management</li>
+                            <li><span>Project Development</span><br>Academic Projects with Java, MySQL & Web Tech</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Actively Learning & Building Projects</li>
+                            <li><span>Web Dev</span><br>Creating Websites using HTML, CSS & JavaScript</li>
+                            <li><span>Java</span><br>Know Java Language & Database Management</li>
+                            <li><span>Python</span><br>Writing Programs & Scripts in Python</li>
+                            <li><span>DSA</span><br>Solving Problems on Platforms like LeetCode</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BSc Computer Science</span><br>Ramniranjan Jhunjhunwala College, Mumbai (2nd Year)
+                            </li>
+                            <li><span>Web Development</span><br>Created Projects using HTML, CSS & JavaScript</li>
+                            <li><span>Java & MySQL</span><br>Developed Backend Logic & Managed Databases</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Service Section----------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Built responsive websites using HTML, CSS, and JavaScript. Created event management and other
+                        interactive projects to enhance user experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Java & Database</h2>
+                    <p>Developed backend applications using Core & Advanced Java. Integrated MySQL for data storage and
+                        management in academic projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programmer</h2>
+                    <p>Strong knowledge of Python for scripting and problem-solving. Practicing Data Structures and
+                        Algorithms regularly on LeetCode.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------Portfolio------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive and interactive portfolio website to showcase my skills, education, projects,
+                            and achievements. Built using HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Banking Account System</h3>
+                        <p>A simple Java + MySQL project that allows users to add money, withdraw, and view balance
+                            using Aadhaar card authentication.</p>
+                        <a href="https://github.com/ShivrajGupta-2004/Project3---BankingAccount" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpeg">
+                    <div class="layer">
+                        <h3>EventOpportunity Website</h3>
+                        <p>An interactive event management platform developed in two versions: one using HTML, CSS, and
+                            JavaScript, and another with Java & MySQL for backend features like login and event CRUD
+                            operations.</p>
+                        <a href="https://github.com/ShivrajGupta-2004/Project2-EventOpportunity" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/ShivrajGupta-2004" class="btn" target="_blank">See More</a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ----------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Conatct Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shivrajguptawork@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8657662529</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Shivraj62863448"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/shievagupta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shivrajgupta2004"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/Shivraj_Gupta_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 Shivraj Gupta. All rights reserved. Designed with passion and dedication.</p>
+        </div>
+        
+    </footer>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_ti2pfZyElS1rwiJfrPz4wHCUZhmtF2_ldTsjuDjQ6axCqiuh24IVJ_GA2XI8U-D9EQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Python Programmer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
